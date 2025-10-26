@@ -10,6 +10,64 @@
   <title>
     Summer Camp | Nursery School | Washington University in St. Louis
   </title>
+    <style>
+        /* New styling for the structured layout */
+        .info-section {
+            margin-bottom: 30px;
+        }
+        
+        .info-section:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        
+        .date-highlight {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .full-indicator {
+            color: #a51417;
+            font-weight: bold;
+        }
+        
+        .hours-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        
+        .hours-block {
+            flex: 1;
+        }
+        
+        .tuition-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        
+        .tuition-item {
+            flex: 1;
+        }
+        
+        .bear-tracks-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .bear-track-item {
+            padding: 5px 0;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #777;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +78,7 @@
       <h1>Summer Camp</h1>
       <div>
         <img src="https://nurseryschool.wustl.edu/files/2017/01/WU-Nursery-Bear_color-e1487710478809.jpg" alt=""
-          width="300" height="355">
+          width="170" height="200">
 
         <h2>REGISTRATION FOR SUMMER CAMP IS NOT AVAILABLE YET!</h2>
         <h3>
@@ -77,28 +135,65 @@
       <hr>
       <br>
       <h1>Dates, Tuition and Hours</h1>
-      <h3>Summer Camp Dates</h3>
-      <p>June Session: June 10 – June 28 (Big Bears full)</p>
-      <p>
-        July Session: July 1 – 19 (no camp July 4 & 5) Big Bears full
-      </p>
-      <h3>Hours</h3>
-      <p>9:00 am – 12:30 pm, Monday-Friday</p>
-      <p>(Extended Days: 12:30 pm – 2:30 pm, Monday-Thursday)</p>
-      <h3>Camp Tuition</h3>
-      <p>Session 1 $500</p>
-      <p>Session 2 $440</p>
-      <h3>Bear Tracks/Extended Day</h3>
-      <p>
-        Offered Monday through Thursday, 12:30 pm to 2:30 pm. Afternoon play
-        with mixed-age children. Children must be toilet trained to attend
-        Bear Tracks.
-      </p>
-      <h3>Bear Tracks Tuition per session</h3>
-      <p>$60 Three Mondays</p>
-      <p>$60 Three Tuesdays</p>
-      <p>$60 Three Wednesdays</p>
-      <p>$60 Three Thursdays (Session 2, $40)</p>
+        
+        <div class="info-section">
+            <h3>Summer Camp Dates</h3>
+            <div class="date-highlight">June Session: June 10 – June 28 <span class="full-indicator">(Big Bears full)</span></div>
+            <div class="date-highlight">July Session: July 1 – 19 <span class="full-indicator">(Big Bears full)</span></div>
+            <p class="note">No camp July 4 & 5</p>
+        </div>
+        
+        <div class="info-section">
+            <h3>Hours</h3>
+            <div class="hours-container">
+                <div class="hours-block">
+                    <p>9:00 am – 12:30 pm, Monday-Friday</p>
+                </div>
+                <div class="hours-block">
+                    <p>(Extended Days: 12:30 pm – 2:30 pm, Monday-Thursday)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>Camp Tuition</h3>
+            <div class="tuition-container">
+                <div class="tuition-item">
+                    <p>Session 1: $500</p>
+                </div>
+                <div class="tuition-item">
+                    <p>Session 2: $440</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>Bear Tracks/Extended Day</h3>
+            <p>
+                Offered Monday through Thursday, 12:30 pm to 2:30 pm. Afternoon play
+                with mixed-age children. Children must be toilet trained to attend
+                Bear Tracks.
+            </p>
+        </div>
+        
+        <div class="info-section">
+            <h3>Bear Tracks Tuition per session</h3>
+            <div class="bear-tracks-container">
+                <div class="bear-track-item">
+                    <p>$60: Three Mondays</p>
+                </div>
+                <div class="bear-track-item">
+                    <p>$60: Three Tuesdays</p>
+                </div>
+                <div class="bear-track-item">
+                    <p>$60: Three Wednesdays</p>
+                </div>
+                <div class="bear-track-item">
+                    <p>$60: Three Thursdays</p>
+                    <p class="note">(Session 2, $40)</p>
+                </div>
+            </div>
+        </div>
       <hr>
     </main>
   </div>
